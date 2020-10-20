@@ -2,7 +2,6 @@ import requests
 import config as api
 
 
-
 def shortenURL(url, unique_name, api=api):
     if len(unique_name) > 0:
         api_url = f"https://cutt.ly/api/api.php?key={api.api_key}&short={url}&name={unique_name}"
